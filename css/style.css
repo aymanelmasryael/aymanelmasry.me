@@ -40,51 +40,19 @@ header .container {
 
 .site-name {
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.05rem;
     color: #F5F7FA;
     letter-spacing: -0.01em;
 }
 
 .site-name:hover { color: #F5F7FA; }
 
-nav { display: flex; align-items: center; gap: 20px; }
-
-nav a {
-    color: #9AA8BC;
-    font-size: 0.85rem;
-    font-weight: 500;
-    transition: color 200ms;
-    position: relative;
-}
-
-nav a:hover { color: #F5F7FA; }
-nav a.active { color: #F5F7FA; }
-
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 5px;
-    background: none;
-    border: none;
-    padding: 4px;
-}
-
-.menu-toggle span {
-    display: block;
-    width: 20px;
-    height: 2px;
-    background: #F5F7FA;
-    border-radius: 2px;
-    transition: transform 200ms, opacity 200ms;
-}
-
 /* ── Hero / Intro ── */
 .intro {
     display: flex;
     gap: 48px;
     align-items: center;
-    padding: 60px 0 20px;
+    padding: 60px 0 28px;
 }
 
 .profile-img {
@@ -94,21 +62,22 @@ nav a.active { color: #F5F7FA; }
     object-fit: cover;
     flex-shrink: 0;
     border: 3px solid #0074FF;
-    box-shadow: 0 0 20px rgba(0, 116, 255, 0.15);
+    box-shadow: 0 0 24px rgba(0, 116, 255, 0.2);
 }
 
 .intro-text h1 {
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: -0.02em;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
     line-height: 1.2;
 }
 
 .intro-text .subtitle {
-    font-size: 1rem;
+    font-size: 0.95rem;
     color: #9AA8BC;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
+    line-height: 1.5;
 }
 
 .buttons {
@@ -141,12 +110,14 @@ nav a.active { color: #F5F7FA; }
 }
 
 /* ── Content ── */
-.page { padding-bottom: 60px; }
+.page {
+    padding-bottom: 48px;
+}
 
 .page p {
     font-size: 0.95rem;
-    color: #F5F7FA;
-    margin-bottom: 14px;
+    color: #D6DFE8;
+    margin-bottom: 16px;
     line-height: 1.8;
 }
 
@@ -166,89 +137,12 @@ nav a.active { color: #F5F7FA; }
 
 .page strong { color: #F5F7FA; font-weight: 600; }
 
-/* ── Sections ── */
-.section-label {
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: #9AA8BC;
-    font-weight: 600;
-    margin: 40px 0 8px;
-}
-
-.project-card {
-    margin-bottom: 20px;
-}
-
-.project-card h3 {
-    font-size: 0.95rem;
-    font-weight: 600;
-    color: #F5F7FA;
-    margin-bottom: 2px;
-}
-
-.project-card h3 a { color: #F5F7FA; }
-.project-card h3 a:hover { color: #0074FF; }
-
-.project-card .meta {
-    font-size: 0.8rem;
-    color: #9AA8BC;
-    margin-bottom: 4px;
-}
-
-.project-card p {
-    font-size: 0.9rem;
-    color: #9AA8BC;
-    line-height: 1.7;
-}
-
-.research-item {
-    display: flex;
-    gap: 12px;
-    margin-bottom: 10px;
-}
-
-.research-item .date {
-    font-size: 0.85rem;
-    color: #9AA8BC;
-    min-width: 44px;
-    font-weight: 500;
-}
-
-.research-item p {
-    font-size: 0.9rem;
-    color: #F5F7FA;
-    margin-bottom: 0;
-}
-
-/* ── Contact ── */
-.contact-list { margin-bottom: 28px; }
-.contact-list p { margin-bottom: 6px; }
-.contact-list a {
-    color: #F5F7FA;
-    font-size: 0.95rem;
-    font-weight: 500;
-}
-.contact-list a:hover { color: #0074FF; }
-
 /* ── Footer ── */
 footer {
     border-top: 1px solid #243245;
-    padding: 48px 0 60px;
+    padding: 24px 0 48px;
     font-size: 0.85rem;
     color: #9AA8BC;
-}
-
-footer a {
-    color: #9AA8BC;
-    text-decoration: underline;
-    text-decoration-color: transparent;
-    transition: color 200ms, text-decoration-color 200ms;
-}
-
-footer a:hover {
-    color: #F5F7FA;
-    text-decoration-color: #F5F7FA;
 }
 
 /* ── Responsive ── */
@@ -257,27 +151,12 @@ footer a:hover {
         flex-direction: column;
         text-align: center;
         gap: 24px;
-        padding: 32px 0 16px;
+        padding: 36px 0 20px;
     }
 
     .profile-img { width: 140px; height: 140px; }
     .buttons { justify-content: center; }
     .intro-text h1 { font-size: 1.6rem; }
-
-    nav { display: none; }
-    nav.open {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 64px;
-        left: 0;
-        right: 0;
-        background: #101826;
-        border-bottom: 1px solid #243245;
-        padding: 16px 24px;
-        gap: 14px;
-    }
-    .menu-toggle { display: flex; }
 }
 
 @media (max-width: 400px) {
