@@ -1,0 +1,20 @@
+:root {
+    --primary: #0074FF;
+    --primary-hover: #0052CC;
+    --primary-glow: rgba(0, 116, 255, 0.15);
+    --background: #07111F;
+    --surface: #101826;
+    --surface-hover: #1A2438;
+    --text: #F5F7FA;
+    --text-secondary: #C8D0DC;
+    --muted: #9AA8BC;
+    --border: #243245;
+    --border-hover: #3A4A62;
+    --radius: 8px;
+    --radius-sm: 4px;
+    --transition: 200ms ease;
+    --font-sans: 'Inter', -apple-system, system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    --max-width: 720px;
+    --header-height: 64px;
+}
