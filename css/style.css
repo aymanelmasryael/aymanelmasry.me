@@ -28,6 +28,7 @@ header {
     background: rgba(7, 17, 31, 0.9);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid #243245;
 }
 
 header .container {
@@ -232,6 +233,7 @@ nav a.active { color: #F5F7FA; }
 
 /* ── Footer ── */
 footer {
+    border-top: 1px solid #243245;
     padding: 40px 0 60px;
     font-size: 0.85rem;
     color: #9AA8BC;
