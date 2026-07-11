@@ -119,6 +119,7 @@ nav a.active { color: #F5F7FA; }
 .btn {
     display: inline-flex;
     align-items: center;
+    gap: 6px;
     padding: 8px 18px;
     border-radius: 4px;
     background: #0074FF;
