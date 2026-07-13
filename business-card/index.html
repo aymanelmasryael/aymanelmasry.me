@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Business Card — Ayman Elmasry</title>
+  <meta name="robots" content="noindex"/>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Inter, Arial, sans-serif;
+      background: #050814;
+      color: #F1F5F9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      flex-direction: column;
+      padding: 2rem;
+    }
+    .card {
+      max-width: 1050px;
+      width: 100%;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0, 116, 255, 0.1);
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .actions {
+      margin-top: 2rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .btn {
+      padding: 0.75rem 2rem;
+      border-radius: 6px;
+      border: 1px solid #0074FF;
+      color: #0074FF;
+      text-decoration: none;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      transition: all 0.2s;
+    }
+    .btn:hover {
+      background: #0074FF;
+      color: #fff;
+    }
+    .btn-download {
+      background: #0074FF;
+      color: #fff;
+    }
+    .btn-download:hover {
+      background: #0052CC;
+      border-color: #0052CC;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="business-card.svg" alt="Ayman Elmasry Business Card"/>
+  </div>
+  <div class="actions">
+    <a class="btn btn-download" href="business-card.png" download>Download PNG</a>
+    <a class="btn" href="business-card.svg" download>Download SVG</a>
+  </div>
+</body>
+</html>
