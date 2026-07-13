@@ -241,3 +241,19 @@ main.container {
         gap: 48px;
     }
 }
+
+/* ── Desktop Two-Column Hero ── */
+@media (min-width: 1024px) {
+    .intro {
+        flex-direction: row;
+    }
+
+    .profile {
+        flex-shrink: 0;
+    }
+
+    .button {
+        padding: 0 14px;
+        font-size: 0.85rem;
+    }
+}
