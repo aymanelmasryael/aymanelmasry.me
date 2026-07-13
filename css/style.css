@@ -244,12 +244,24 @@ main.container {
 
 /* ── Desktop Two-Column Hero ── */
 @media (min-width: 1024px) {
+    .container {
+        max-width: 852px;
+    }
+
     .intro {
         flex-direction: row;
+        gap: 64px;
+        align-items: center;
     }
 
     .profile {
+        width: 220px;
+        height: 220px;
         flex-shrink: 0;
+    }
+
+    .intro > div {
+        max-width: 520px;
     }
 
     .button {
