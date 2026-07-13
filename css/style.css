@@ -245,7 +245,7 @@ main.container {
 /* ── Desktop Two-Column Hero ── */
 @media (min-width: 1024px) {
     .container {
-        max-width: 852px;
+        max-width: 892px;
     }
 
     .intro {
@@ -261,11 +261,23 @@ main.container {
     }
 
     .intro > div {
-        max-width: 520px;
+        max-width: 560px;
+    }
+
+    .intro h1 {
+        font-size: 3rem;
+    }
+
+    .intro .subtitle {
+        font-size: 1.25rem;
     }
 
     .button {
         padding: 0 14px;
         font-size: 0.85rem;
+    }
+
+    .about {
+        max-width: 680px;
     }
 }
