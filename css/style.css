@@ -51,7 +51,7 @@ a:hover {
 }
 
 .container {
-    max-width: 760px;
+    max-width: 620px;
     margin: 0 auto;
     padding: 0 24px;
     width: 100%;
@@ -91,13 +91,13 @@ a:hover {
 /* ── Main Layout ── */
 main {
     flex: 1;
-    padding: 120px 0 60px;
+    padding: 160px 0 80px;
 }
 
 .page {
     display: flex;
     flex-direction: column;
-    gap: 56px;
+    gap: 80px;
 }
 
 /* ── Intro Section ── */
@@ -105,7 +105,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 32px;
+    gap: 48px;
 }
 
 .profile {
@@ -125,7 +125,7 @@ main {
 .intro h1 {
     font-size: 2.5rem;
     font-weight: 800;
-    margin-bottom: 6px;
+    margin-bottom: 16px;
     letter-spacing: -0.03em;
     color: #fff;
 }
@@ -133,7 +133,7 @@ main {
 .intro .subtitle {
     font-size: 1.15rem;
     color: var(--text-muted);
-    margin-bottom: 24px;
+    margin-bottom: 32px;
     font-weight: 400;
 }
 
@@ -200,14 +200,14 @@ main {
 /* ── Responsive Design ── */
 @media (max-width: 640px) {
     main {
-        padding: 90px 0 50px;
+        padding: 120px 0 60px;
     }
 
     .intro {
         flex-direction: column;
         align-items: flex-start;
         text-align: left;
-        gap: 32px;
+        gap: 36px;
     }
 
     .profile {
@@ -217,9 +217,15 @@ main {
 
     .intro h1 {
         font-size: 2.1rem;
+        margin-bottom: 12px;
     }
 
     .intro .subtitle {
         font-size: 1.05rem;
+        margin-bottom: 24px;
+    }
+
+    .page {
+        gap: 60px;
     }
 }
