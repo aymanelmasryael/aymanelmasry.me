@@ -51,7 +51,7 @@ a:hover {
 }
 
 .container {
-    max-width: 620px;
+    max-width: 700px;
     margin: 0 auto;
     padding: 0 24px;
     width: 100%;
@@ -66,7 +66,7 @@ a:hover {
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--border-color);
-    padding: 20px 0;
+    padding: 22px 0;
 }
 
 .nav {
@@ -78,6 +78,7 @@ a:hover {
 .site-name {
     font-weight: 700;
     font-size: 1.25rem;
+    line-height: 1.4;
     color: var(--text-color);
     letter-spacing: -0.02em;
     text-decoration: none;
@@ -91,13 +92,13 @@ a:hover {
 /* ── Main Layout ── */
 main.container {
     flex: 1;
-    padding: 160px 24px 80px;
+    padding: 72px 24px 80px;
 }
 
 .page {
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 64px;
 }
 
 /* ── Intro Section ── */
@@ -105,12 +106,12 @@ main.container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 56px;
+    gap: 48px;
 }
 
 .profile {
-    width: 220px;
-    height: 220px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
@@ -123,24 +124,26 @@ main.container {
 }
 
 .intro h1 {
-    font-size: 3rem;
-    font-weight: 800;
-    margin-bottom: 22px;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 20px;
     letter-spacing: -0.03em;
     color: #fff;
 }
 
 .intro .subtitle {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
     color: var(--text-muted);
-    margin-bottom: 32px;
+    margin-bottom: 36px;
     font-weight: 400;
 }
 
 .buttons {
     display: flex;
     flex-wrap: wrap;
-    gap: 14px;
+    gap: 16px;
 }
 
 .button {
@@ -148,7 +151,7 @@ main.container {
     align-items: center;
     gap: 8px;
     justify-content: center;
-    padding: 10px 20px;
+    padding: 16px 28px;
     font-weight: 500;
     font-size: 1rem;
     color: var(--text-color);
@@ -178,8 +181,13 @@ main.container {
 }
 
 /* ── About Section ── */
+.about {
+    max-width: 680px;
+}
+
 .about p {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
+    line-height: 1.8;
     margin-bottom: 20px;
     color: #d1d9e0;
 }
@@ -199,8 +207,8 @@ main.container {
 
 /* ── Responsive Design ── */
 @media (max-width: 640px) {
-    main {
-        padding: 120px 0 60px;
+    main.container {
+        padding: 56px 24px 60px;
     }
 
     .intro {
@@ -211,21 +219,21 @@ main.container {
     }
 
     .profile {
-        width: 170px;
-        height: 170px;
+        width: 160px;
+        height: 160px;
     }
 
     .intro h1 {
-        font-size: 2.4rem;
-        margin-bottom: 12px;
+        font-size: 2.5rem;
+        margin-bottom: 16px;
     }
 
     .intro .subtitle {
-        font-size: 1.15rem;
-        margin-bottom: 24px;
+        font-size: 1.25rem;
+        margin-bottom: 28px;
     }
 
     .page {
-        gap: 60px;
+        gap: 48px;
     }
 }
