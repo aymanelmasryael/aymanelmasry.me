@@ -202,7 +202,7 @@ main.container {
     color: inherit;
     text-decoration: underline;
     text-decoration-thickness: 0.5px;
-    text-underline-offset: 3px;
+    text-underline-offset: 5px;
     text-decoration-color: rgba(168, 178, 188, 0.3);
 }
 
