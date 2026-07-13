@@ -109,8 +109,8 @@ main.container {
 }
 
 .profile {
-    width: 190px;
-    height: 190px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
