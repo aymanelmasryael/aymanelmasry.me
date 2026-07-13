@@ -1,0 +1,25 @@
+File: AYMAN ELMASRY.png
+Path: Macintosh HD / Users / aymanelmasry / Desktop / Apple / aymanelmasry / aymanelmasry.me
+
+General:
+  Kind: PNG image
+  Size: 2,633,060 bytes (2.6 MB)
+  Created: Monday, 13 July 2026 at 3:47 PM
+  Modified: Monday, 13 July 2026 at 3:47 PM
+
+Metadata:
+  Dimensions: 1595 × 1595
+  Device make: Canon
+  Device model: Canon EOS R5m2
+  Color space: RGB
+  Color profile: sRGB IEC61966-2.1
+  Focal length: 79 mm
+  Alpha channel: Yes
+  Red eye: No
+  Metering mode: Pattern
+  F number: f/5
+  Exposure program: Manual
+  Exposure time: 1/125
+
+Name & Extension:
+  profile.png
