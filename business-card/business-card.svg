@@ -11,10 +11,10 @@
   </defs>
 
   <rect width="1050" height="600" fill="url(#bg)" rx="12"/>
-  <rect x="2" y="2" width="1046" height="596" rx="10" fill="none" stroke="#0074FF" stroke-width="0.5" opacity="0.1"/>
+  <rect x="2" y="2" width="1046" height="596" rx="10" fill="none" stroke="#0074FF" stroke-width="0.5" opacity="0.08"/>
   <rect x="0" y="0" width="1050" height="3" fill="url(#accent)"/>
 
-  <g transform="translate(451, 101) scale(4)">
+  <g transform="translate(112.5, 217.5) scale(5)">
     <rect x="-2" y="-2" width="37" height="37" rx="4" fill="#050814"/>
     <rect x="0" y="0" width="33" height="33" fill="#ffffff"/>
     <g transform="translate(4,4)">
@@ -109,12 +109,13 @@
     </g>
   </g>
 
-  <rect x="440" y="265" width="170" height="1" rx="0.5" fill="url(#accent)" opacity="0.3"/>
+  <text x="330" y="238" font-family="Inter,Helvetica,Arial,sans-serif" font-size="42" font-weight="700" fill="#F1F5F9" letter-spacing="-0.4">Ayman Elmasry</text>
+  <text x="330" y="268" font-family="Inter,Helvetica,Arial,sans-serif" font-size="15" fill="#94A3B8" letter-spacing="0.35">Visionary Architect</text>
+  <text x="330" y="286" font-family="Inter,Helvetica,Arial,sans-serif" font-size="15" fill="#94A3B8" letter-spacing="0.35">AI Orchestrator</text>
+  <text x="330" y="304" font-family="Inter,Helvetica,Arial,sans-serif" font-size="15" fill="#94A3B8" letter-spacing="0.35">Brand Designer</text>
 
-  <text x="525" y="308" font-family="Inter,Helvetica,Arial,sans-serif" font-size="36" font-weight="700" fill="#F1F5F9" text-anchor="middle" letter-spacing="-0.3">Ayman Elmasry</text>
-  <text x="525" y="338" font-family="Inter,Helvetica,Arial,sans-serif" font-size="15" fill="#94A3B8" text-anchor="middle" letter-spacing="0.4">Visionary Architect</text>
-  <text x="525" y="356" font-family="Inter,Helvetica,Arial,sans-serif" font-size="15" fill="#94A3B8" text-anchor="middle" letter-spacing="0.4">AI Orchestrator</text>
-  <text x="525" y="374" font-family="Inter,Helvetica,Arial,sans-serif" font-size="15" fill="#94A3B8" text-anchor="middle" letter-spacing="0.4">Brand Designer</text>
-  <text x="525" y="408" font-family="Inter,Helvetica,Arial,sans-serif" font-size="13" fill="#64748B" text-anchor="middle" letter-spacing="0.3">ayman@aymanelmasry.me</text>
-  <text x="525" y="430" font-family="Inter,Helvetica,Arial,sans-serif" font-size="13" fill="#0074FF" text-anchor="middle" letter-spacing="0.5">aymanelmasry.me</text>
+  <rect x="330" y="324" width="160" height="1" rx="0.5" fill="url(#accent)" opacity="0.25"/>
+
+  <text x="330" y="354" font-family="Inter,Helvetica,Arial,sans-serif" font-size="14" fill="#64748B" letter-spacing="0.25">ayman@aymanelmasry.me</text>
+  <text x="330" y="380" font-family="Inter,Helvetica,Arial,sans-serif" font-size="14" fill="#0074FF" letter-spacing="0.4">aymanelmasry.me</text>
 </svg>
