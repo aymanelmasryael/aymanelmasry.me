@@ -105,12 +105,12 @@ main.container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 48px;
+    gap: 56px;
 }
 
 .profile {
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
@@ -211,8 +211,8 @@ main.container {
     }
 
     .profile {
-        width: 160px;
-        height: 160px;
+        width: 170px;
+        height: 170px;
     }
 
     .intro h1 {
