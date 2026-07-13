@@ -201,7 +201,7 @@ main.container {
 .site-footer a {
     color: inherit;
     text-decoration: underline;
-    text-decoration-thickness: 1px;
+    text-decoration-thickness: 0.5px;
     text-underline-offset: 3px;
 }
 
