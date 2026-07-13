@@ -26,6 +26,9 @@
                 <img class="header-profile" src="AYMAN%20ELMASRY.png" alt=""/>
                 Ayman Elmasry
             </a>
+            <button class="theme-toggle" aria-label="Switch theme">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
         </nav>
     </header>
     
@@ -68,5 +71,23 @@
     <footer class="site-footer">
         <div class="container">© 2026 <a href="https://www.aymanelmasry.com">Ayman Elmasry</a></div>
     </footer>
+
+    <script>
+        (function() {
+            var html = document.documentElement;
+            var stored = localStorage.getItem('theme');
+            if (stored === 'light') {
+                html.classList.add('light-mode');
+            } else if (!stored && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                html.classList.add('light-mode');
+            }
+        })();
+
+        document.querySelector('.theme-toggle').addEventListener('click', function() {
+            var html = document.documentElement;
+            html.classList.toggle('light-mode');
+            localStorage.setItem('theme', html.classList.contains('light-mode') ? 'light' : 'dark');
+        });
+    </script>
 </body>
 </html>

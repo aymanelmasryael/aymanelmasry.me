@@ -2,12 +2,29 @@
     --bg-color: #07111F;
     --text-color: #F5F7FA;
     --text-muted: #a8b2bc;
+    --heading-color: #fff;
+    --body-color: #d1d9e0;
     --primary-color: #0074FF;
     --primary-hover: #3399FF;
     --border-color: #243245;
+    --header-bg: rgba(7, 17, 31, 0.75);
     --button-bg: rgba(20, 37, 61, 0.6);
     --button-hover: rgba(30, 54, 92, 0.8);
     --button-border: #1a2a40;
+}
+
+:root.light-mode {
+    --bg-color: #F5F5F5;
+    --text-color: #1A1A1A;
+    --text-muted: #555555;
+    --heading-color: #1A1A1A;
+    --body-color: #333333;
+    --primary-hover: #0056CC;
+    --border-color: #E5E5E5;
+    --header-bg: rgba(245, 245, 245, 0.8);
+    --button-bg: #FFFFFF;
+    --button-hover: #F0F0F0;
+    --button-border: #D0D0D0;
 }
 
 * { 
@@ -38,6 +55,10 @@ a {
     transition: color 200ms ease; 
 }
 
+body, .header, .button, .site-footer {
+    transition: background-color 300ms ease, color 300ms ease;
+}
+
 a:hover { 
     color: var(--primary-hover); 
     text-decoration: underline; 
@@ -62,7 +83,7 @@ a:hover {
     position: sticky;
     top: 0;
     z-index: 100;
-    background: rgba(7, 17, 31, 0.75);
+    background: var(--header-bg);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--border-color);
@@ -88,7 +109,7 @@ a:hover {
 }
 
 .site-name:hover {
-    color: #fff;
+    color: var(--text-color);
     text-decoration: none;
 }
 
@@ -97,6 +118,27 @@ a:hover {
     height: 26px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 200ms ease;
+}
+
+.theme-toggle:hover {
+    color: var(--text-color);
+}
+
+.light-mode .theme-toggle svg {
+    transform: rotate(180deg);
 }
 
 /* ── Main Layout ── */
@@ -131,7 +173,7 @@ main.container {
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: 20px;
-    color: #fff;
+    color: var(--heading-color);
 }
 
 .intro .subtitle {
@@ -167,9 +209,9 @@ main.container {
 
 .button:hover {
     background-color: var(--button-hover);
-    color: #fff;
+    color: var(--text-color);
     text-decoration: none;
-    border-color: rgba(255, 255, 255, 0.1);
+    border-color: var(--primary-color);
 }
 
 .button svg {
@@ -182,11 +224,11 @@ main.container {
     font-size: 1.25rem;
     line-height: 1.8;
     margin-bottom: 20px;
-    color: #d1d9e0;
+    color: var(--body-color);
 }
 
 .about strong {
-    color: #fff;
+    color: var(--text-color);
     font-weight: 600;
 }
 
@@ -203,7 +245,6 @@ main.container {
     text-decoration: underline;
     text-decoration-thickness: 0.8px;
     text-underline-offset: 5px;
-    text-decoration-color: rgba(168, 178, 188, 0.3);
 }
 
 .site-footer a:hover {
