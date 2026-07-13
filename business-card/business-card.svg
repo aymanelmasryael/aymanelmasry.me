@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1050" height="600" viewBox="0 0 1050 600">
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="600" viewBox="0 0 1050 600">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#050814"/>
@@ -10,15 +10,11 @@
     </linearGradient>
   </defs>
 
-  <!-- Background -->
   <rect width="1050" height="600" fill="url(#bg)" rx="12"/>
-  <rect x="2" y="2" width="1046" height="596" rx="10" fill="none" stroke="#0074FF" stroke-width="0.5" opacity="0.15"/>
-  <rect x="0" y="0" width="1050" height="4" fill="url(#accent)"/>
-  <rect x="0" y="596" width="1050" height="4" fill="url(#accent)"/>
-  <rect x="0" y="0" width="4" height="600" fill="url(#accent)" opacity="0.3"/>
+  <rect x="2" y="2" width="1046" height="596" rx="10" fill="none" stroke="#0074FF" stroke-width="0.5" opacity="0.1"/>
+  <rect x="0" y="0" width="1050" height="3" fill="url(#accent)"/>
 
-  <!-- QR Code (left side, centered vertically) -->
-  <g transform="translate(112.5, 217.5) scale(5)">
+  <g transform="translate(451, 101) scale(4)">
     <rect x="-2" y="-2" width="37" height="37" rx="4" fill="#050814"/>
     <rect x="0" y="0" width="33" height="33" fill="#ffffff"/>
     <g transform="translate(4,4)">
@@ -113,54 +109,12 @@
     </g>
   </g>
 
-  <!-- SCAN ME label below circle -->
-  <text x="195" y="425" font-family="Inter,Helvetica,Arial,sans-serif" font-size="9" fill="#64748B" letter-spacing="1" text-anchor="middle">SCAN ME</text>
-  <text x="195" y="438" font-family="Inter,Helvetica,Arial,sans-serif" font-size="9" fill="#0074FF" letter-spacing="1" text-anchor="middle">aymanelmasry.me</text>
+  <rect x="440" y="265" width="170" height="1" rx="0.5" fill="url(#accent)" opacity="0.3"/>
 
-  <!-- Name -->
-  <text x="330" y="220" font-family="Inter,Helvetica,Arial,sans-serif" font-size="40" font-weight="700" fill="#F1F5F9" letter-spacing="-0.5">Ayman Elmasry</text>
-
-  <!-- Title -->
-  <text x="330" y="256" font-family="Inter,Helvetica,Arial,sans-serif" font-size="17" fill="#94A3B8" letter-spacing="0.3">Visionary Architect · AI Orchestrator · Brand Designer</text>
-
-  <!-- Divider -->
-  <rect x="330" y="272" width="200" height="2" rx="1" fill="url(#accent)" opacity="0.6"/>
-
-  <!-- Contact -->
-  <text x="330" y="300" font-family="Inter,Helvetica,Arial,sans-serif" font-size="14" fill="#64748B" letter-spacing="0.3">
-    <tspan fill="#0074FF">✉</tspan> ayman@aymanelmasry.me
-  </text>
-  <text x="330" y="322" font-family="Inter,Helvetica,Arial,sans-serif" font-size="14" fill="#64748B" letter-spacing="0.3">
-    <tspan fill="#0074FF">◈</tspan> aymanelmasry.me
-  </text>
-  <text x="330" y="344" font-family="Inter,Helvetica,Arial,sans-serif" font-size="14" fill="#64748B" letter-spacing="0.3">
-    <tspan fill="#0074FF">◆</tspan> aymanelmasry.com
-  </text>
-
-  <!-- Social handles -->
-  <text x="330" y="382" font-family="Inter,Helvetica,Arial,sans-serif" font-size="11" fill="#475569" letter-spacing="0.3">
-    <tspan fill="#0074FF">▸</tspan> GitHub &amp; LinkedIn &amp; X — @aymanelmasryael
-  </text>
-
-  <!-- AEL brand mark -->
-  <rect x="330" y="400" width="130" height="22" rx="11" fill="none" stroke="#0074FF" stroke-width="0.5" opacity="0.3"/>
-  <text x="395" y="415" font-family="Inter,Helvetica,Arial,sans-serif" font-size="9" fill="#0074FF" text-anchor="middle" letter-spacing="2" opacity="0.6">AEL DIGITAL STUDIO</text>
-
-  <!-- Bottom divider -->
-  <rect x="60" y="540" width="930" height="1" fill="#0074FF" opacity="0.15"/>
-
-  <!-- Social row -->
-  <text x="60" y="565" font-family="Inter,Helvetica,Arial,sans-serif" font-size="11" fill="#64748B">GitHub</text>
-  <circle cx="124" cy="561" r="2" fill="#0074FF" opacity="0.4"/>
-  <text x="136" y="565" font-family="Inter,Helvetica,Arial,sans-serif" font-size="11" fill="#64748B">LinkedIn</text>
-  <circle cx="202" cy="561" r="2" fill="#0074FF" opacity="0.4"/>
-  <text x="214" y="565" font-family="Inter,Helvetica,Arial,sans-serif" font-size="11" fill="#64748B">X</text>
-
-  <text x="60" y="582" font-family="Inter,Helvetica,Arial,sans-serif" font-size="9" fill="#475569">@aymanelmasryael</text>
-  <text x="136" y="582" font-family="Inter,Helvetica,Arial,sans-serif" font-size="9" fill="#475569">/in/aymanelmasryael</text>
-  <text x="214" y="582" font-family="Inter,Helvetica,Arial,sans-serif" font-size="9" fill="#475569">@aymanelmasryael</text>
-
-  <!-- Brand badge -->
-  <rect x="800" y="548" width="190" height="28" rx="14" fill="none" stroke="#0074FF" stroke-width="0.5" opacity="0.3"/>
-  <text x="895" y="567" font-family="Inter,Helvetica,Arial,sans-serif" font-size="8" fill="#0074FF" text-anchor="middle" letter-spacing="1" opacity="0.6">AEL DIGITAL STUDIO © 2026</text>
+  <text x="525" y="308" font-family="Inter,Helvetica,Arial,sans-serif" font-size="36" font-weight="700" fill="#F1F5F9" text-anchor="middle" letter-spacing="-0.3">Ayman Elmasry</text>
+  <text x="525" y="338" font-family="Inter,Helvetica,Arial,sans-serif" font-size="15" fill="#94A3B8" text-anchor="middle" letter-spacing="0.4">Visionary Architect</text>
+  <text x="525" y="356" font-family="Inter,Helvetica,Arial,sans-serif" font-size="15" fill="#94A3B8" text-anchor="middle" letter-spacing="0.4">AI Orchestrator</text>
+  <text x="525" y="374" font-family="Inter,Helvetica,Arial,sans-serif" font-size="15" fill="#94A3B8" text-anchor="middle" letter-spacing="0.4">Brand Designer</text>
+  <text x="525" y="408" font-family="Inter,Helvetica,Arial,sans-serif" font-size="13" fill="#64748B" text-anchor="middle" letter-spacing="0.3">ayman@aymanelmasry.me</text>
+  <text x="525" y="430" font-family="Inter,Helvetica,Arial,sans-serif" font-size="13" fill="#0074FF" text-anchor="middle" letter-spacing="0.5">aymanelmasry.me</text>
 </svg>
