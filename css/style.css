@@ -15,9 +15,9 @@ a:hover { color: #3399FF; }
 ::selection { background: #0074FF; color: #fff; }
 
 .container {
-    max-width: 720px;
+    max-width: 680px; /* Reduced width for academic feel */
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0 32px;
 }
 
 /* ── Header ── */
@@ -39,10 +39,11 @@ header .container {
 }
 
 .site-name {
-    font-weight: 600;
-    font-size: 1.05rem;
+    font-weight: 500;
+    font-size: 1.1rem;
     color: #F5F7FA;
-    letter-spacing: -0.01em;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
 }
 
 .site-name:hover { color: #F5F7FA; }
@@ -52,7 +53,7 @@ header .container {
     display: flex;
     gap: 48px;
     align-items: center;
-    padding: 60px 0 28px;
+    padding: 160px 0 60px; /* Generous whitespace before hero content */
 }
 
 .profile-img {
@@ -61,28 +62,28 @@ header .container {
     border-radius: 50%;
     object-fit: cover;
     flex-shrink: 0;
-    border: 3px solid #0074FF;
-    box-shadow: 0 0 24px rgba(0, 116, 255, 0.2);
+    /* Shadows and borders removed for academic minimalism */
 }
 
 .intro-text h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    margin-bottom: 4px;
-    line-height: 1.2;
+    font-size: 2.2rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin-bottom: 12px;
+    line-height: 1.3;
 }
 
 .intro-text .subtitle {
-    font-size: 0.95rem;
+    font-size: 1.05rem;
     color: #9AA8BC;
-    margin-bottom: 18px;
-    line-height: 1.5;
+    margin-bottom: 24px;
+    line-height: 1.6;
+    font-weight: 400;
 }
 
 .buttons {
     display: flex;
-    gap: 10px;
+    gap: 24px;
     flex-wrap: wrap;
 }
 
@@ -90,23 +91,23 @@ header .container {
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    padding: 8px 18px;
-    border-radius: 4px;
-    background: #0074FF;
-    color: #fff;
+    padding: 0;
+    background: transparent;
+    color: #0074FF;
     font-family: 'Inter', Arial, sans-serif;
-    font-size: 0.85rem;
-    font-weight: 600;
+    font-size: 0.95rem;
+    font-weight: 500;
     cursor: pointer;
-    transition: background 200ms;
+    transition: color 200ms;
     border: none;
-    text-decoration: none;
-    line-height: 1.4;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    line-height: 1.6;
 }
 
 .btn:hover {
-    background: #0066DD;
-    color: #fff;
+    background: transparent;
+    color: #3399FF;
 }
 
 /* ── Content ── */
@@ -149,14 +150,14 @@ footer {
 @media (max-width: 600px) {
     .intro {
         flex-direction: column;
-        text-align: center;
-        gap: 24px;
-        padding: 36px 0 20px;
+        text-align: left; /* Academic readability */
+        gap: 32px;
+        padding: 100px 0 40px;
     }
 
     .profile-img { width: 140px; height: 140px; }
-    .buttons { justify-content: center; }
-    .intro-text h1 { font-size: 1.6rem; }
+    .buttons { justify-content: flex-start; }
+    .intro-text h1 { font-size: 1.8rem; }
 }
 
 @media (max-width: 400px) {
