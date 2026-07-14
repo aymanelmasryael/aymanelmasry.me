@@ -12,37 +12,71 @@
       font-family: 'Source Serif 4', Georgia, serif;
       background: #050814;
       color: #F1F5F9;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       min-height: 100vh;
-      flex-direction: column;
-      padding: 2rem;
+      padding: 3rem 2rem;
     }
-    .card {
-      max-width: 1050px;
+    h1 {
+      text-align: center;
+      font-weight: 600;
+      font-size: 20px;
+      letter-spacing: 1px;
+      color: #64748B;
+      margin-bottom: 0.5rem;
+    }
+    .subtitle {
+      text-align: center;
+      font-size: 13px;
+      color: #475569;
+      margin-bottom: 3rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    @media (max-width: 800px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+    .option {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .label {
+      font-size: 13px;
+      letter-spacing: 2px;
+      color: #94A3B8;
+      margin-bottom: 1rem;
+    }
+    .card-frame {
       width: 100%;
-      border-radius: 12px;
+      border-radius: 8px;
       overflow: hidden;
       box-shadow: 0 20px 60px rgba(0, 116, 255, 0.08);
+      transition: box-shadow 0.3s;
     }
-    .card img {
+    .card-frame:hover {
+      box-shadow: 0 20px 60px rgba(0, 116, 255, 0.15);
+    }
+    .card-frame img {
       width: 100%;
       height: auto;
       display: block;
     }
     .actions {
-      margin-top: 2rem;
+      margin-top: 1.25rem;
       display: flex;
-      gap: 1rem;
+      gap: 0.75rem;
     }
     .btn {
-      padding: 0.6rem 1.8rem;
+      padding: 0.6rem 1.5rem;
       border-radius: 4px;
       border: 1px solid #0074FF;
       color: #0074FF;
       text-decoration: none;
-      font-size: 13px;
+      font-size: 12px;
       letter-spacing: 0.5px;
       transition: all 0.2s;
       font-family: Inter, Arial, sans-serif;
@@ -62,12 +96,29 @@
   </style>
 </head>
 <body>
-  <div class="card">
-    <img src="business-card.svg" alt="Ayman Elmasry Business Card"/>
-  </div>
-  <div class="actions">
-    <a class="btn btn-download" href="business-card.png" download>Download PNG</a>
-    <a class="btn" href="business-card.svg" download>Download SVG</a>
+  <h1>Business Card</h1>
+  <p class="subtitle">Ayman Elmasry — Two concepts</p>
+  <div class="grid">
+    <div class="option">
+      <span class="label">V1 · QR First</span>
+      <div class="card-frame">
+        <img src="business-card-v1.svg" alt="Version 1: QR first"/>
+      </div>
+      <div class="actions">
+        <a class="btn btn-download" href="business-card-v1.png" download>PNG</a>
+        <a class="btn" href="business-card-v1.svg" download>SVG</a>
+      </div>
+    </div>
+    <div class="option">
+      <span class="label">V2 · Info First</span>
+      <div class="card-frame">
+        <img src="business-card-v2.svg" alt="Version 2: Info first"/>
+      </div>
+      <div class="actions">
+        <a class="btn btn-download" href="business-card-v2.png" download>PNG</a>
+        <a class="btn" href="business-card-v2.svg" download>SVG</a>
+      </div>
+    </div>
   </div>
 </body>
 </html>

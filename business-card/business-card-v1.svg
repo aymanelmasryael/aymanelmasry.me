@@ -4,12 +4,16 @@
       <stop offset="0%" stop-color="#050814"/>
       <stop offset="100%" stop-color="#0A1128"/>
     </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0074FF"/>
+      <stop offset="100%" stop-color="#00A3FF"/>
+    </linearGradient>
   </defs>
 
   <rect width="1050" height="600" fill="url(#bg)" rx="12"/>
-  <rect x="2" y="2" width="1046" height="596" rx="10" fill="none" stroke="#0074FF" stroke-width="0.5" opacity="0.06"/>
+  <rect x="2" y="2" width="1046" height="596" rx="10" fill="none" stroke="#0074FF" stroke-width="0.5" opacity="0.08"/>
 
-  <g transform="translate(127.5, 210) scale(5)">
+  <g transform="translate(459, 89) scale(4)">
     <rect x="-2" y="-2" width="37" height="37" rx="3" fill="#050814"/>
     <rect x="0" y="0" width="33" height="33" fill="#ffffff"/>
     <g transform="translate(4,4)">
@@ -104,10 +108,12 @@
     </g>
   </g>
 
-  <text x="340" y="245" font-family="Source Serif 4, Georgia, serif" font-size="40" font-weight="700" fill="#F1F5F9" letter-spacing="-0.4">Ayman Elmasry</text>
-  <text x="340" y="280" font-family="Source Serif 4, Georgia, serif" font-size="16" fill="#94A3B8" letter-spacing="0.35">Visionary Architect</text>
-  <text x="340" y="298" font-family="Source Serif 4, Georgia, serif" font-size="16" fill="#94A3B8" letter-spacing="0.35">AI Orchestrator</text>
-  <text x="340" y="316" font-family="Source Serif 4, Georgia, serif" font-size="16" fill="#94A3B8" letter-spacing="0.35">Brand Designer</text>
-  <text x="340" y="358" font-family="Source Serif 4, Georgia, serif" font-size="14" fill="#64748B" letter-spacing="0.2">ayman@aymanelmasry.me</text>
-  <text x="340" y="382" font-family="Source Serif 4, Georgia, serif" font-size="14" fill="#0074FF" letter-spacing="0.35">aymanelmasry.me</text>
+  <rect x="465" y="252" width="120" height="1" rx="0.5" fill="url(#accent)" opacity="0.2"/>
+
+  <text x="525" y="292" font-family="Source Serif 4, Georgia, serif" font-size="38" font-weight="700" fill="#F1F5F9" text-anchor="middle" letter-spacing="-0.3">Ayman Elmasry</text>
+  <text x="525" y="320" font-family="Source Serif 4, Georgia, serif" font-size="15" fill="#94A3B8" text-anchor="middle" letter-spacing="0.3">Visionary Architect</text>
+  <text x="525" y="338" font-family="Source Serif 4, Georgia, serif" font-size="15" fill="#94A3B8" text-anchor="middle" letter-spacing="0.3">AI Orchestrator</text>
+  <text x="525" y="356" font-family="Source Serif 4, Georgia, serif" font-size="15" fill="#94A3B8" text-anchor="middle" letter-spacing="0.3">Brand Designer</text>
+  <text x="525" y="390" font-family="Source Serif 4, Georgia, serif" font-size="14" fill="#64748B" text-anchor="middle" letter-spacing="0.2">ayman@aymanelmasry.me</text>
+  <text x="525" y="414" font-family="Source Serif 4, Georgia, serif" font-size="14" fill="#0074FF" text-anchor="middle" letter-spacing="0.35">aymanelmasry.me</text>
 </svg>
