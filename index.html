@@ -425,6 +425,7 @@
             });
 
             document.querySelector('.site-name').addEventListener('click', function(e) {
+                if (clickCount > 0) e.preventDefault();
                 clickCount++;
                 if (clickCount === 1) {
                     clickTimer = setTimeout(function() { clickCount = 0; }, 600);
