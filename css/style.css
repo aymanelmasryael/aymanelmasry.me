@@ -162,11 +162,10 @@ a:hover {
     text-decoration: none;
 }
 
-.header-profile {
+.header-logo {
     width: 26px;
     height: 26px;
-    border-radius: var(--radius-full);
-    object-fit: cover;
+    flex-shrink: 0;
 }
 
 .theme-toggle {
