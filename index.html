@@ -103,6 +103,157 @@
         <div class="container">© 2026 <a href="https://www.aymanelmasry.com">Ayman Elmasry</a> · Follow the <a href="https://github.com/aymanelmasryael/ael-brand-system">AEL Brand System</a></div>
     </footer>
 
+    <div id="aelTerminal" class="ael-terminal-overlay" role="dialog" aria-label="AEL Terminal">
+        <div class="ael-terminal">
+            <div class="ael-terminal-header">
+                <span class="ael-terminal-dot ael-terminal-dot-red"></span>
+                <span class="ael-terminal-dot ael-terminal-dot-yellow"></span>
+                <span class="ael-terminal-dot ael-terminal-dot-green"></span>
+                <span class="ael-terminal-title">AEL Terminal v1.0</span>
+            </div>
+            <div class="ael-terminal-body" id="aelTerminalBody">
+                <div class="ael-terminal-line">
+                    <span class="ael-terminal-prompt">❯</span>
+                    <span class="ael-terminal-text ael-terminal-text-dim">Welcome to AEL Terminal. Type <span class="ael-terminal-text-accent">help</span> for available commands.</span>
+                </div>
+            </div>
+            <div class="ael-terminal-input-line">
+                <span class="ael-terminal-prompt">❯</span>
+                <input type="text" class="ael-terminal-input" id="aelTerminalInput" autofocus spellcheck="false" autocomplete="off" aria-label="Terminal input"/>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .ael-terminal-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            animation: aelTerminalFadeIn 0.2s ease;
+        }
+        .ael-terminal-overlay.ael-terminal-open {
+            display: flex;
+        }
+        @keyframes aelTerminalFadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .ael-terminal {
+            width: 100%;
+            max-width: 680px;
+            max-height: 80vh;
+            background: #0d1117;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            box-shadow: 0 24px 80px rgba(0,0,0,0.6);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .ael-terminal-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 16px;
+            background: #161b22;
+            border-bottom: 1px solid #30363d;
+            user-select: none;
+        }
+        .ael-terminal-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        .ael-terminal-dot-red { background: #ff5f56; }
+        .ael-terminal-dot-yellow { background: #ffbd2e; }
+        .ael-terminal-dot-green { background: #27c93f; }
+        .ael-terminal-title {
+            margin-left: auto;
+            font-size: 12px;
+            color: #8b949e;
+            letter-spacing: 0.3px;
+        }
+        .ael-terminal-body {
+            flex: 1;
+            overflow-y: auto;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            min-height: 200px;
+            max-height: 50vh;
+        }
+        .ael-terminal-line {
+            display: flex;
+            gap: 8px;
+            align-items: flex-start;
+            word-break: break-word;
+        }
+        .ael-terminal-input-line {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            padding: 12px 16px;
+            border-top: 1px solid #30363d;
+            background: #0d1117;
+        }
+        .ael-terminal-prompt {
+            color: #0074FF;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        .ael-terminal-text {
+            color: #c9d1d9;
+            white-space: pre-wrap;
+        }
+        .ael-terminal-text-dim {
+            color: #8b949e;
+        }
+        .ael-terminal-text-accent {
+            color: #0074FF;
+        }
+        .ael-terminal-text-green {
+            color: #27c93f;
+        }
+        .ael-terminal-text-yellow {
+            color: #ffbd2e;
+        }
+        .ael-terminal-text-red {
+            color: #ff5f56;
+        }
+        .ael-terminal-input {
+            flex: 1;
+            background: none;
+            border: none;
+            outline: none;
+            color: #c9d1d9;
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit;
+            padding: 0;
+        }
+        .ael-terminal-body::-webkit-scrollbar {
+            width: 6px;
+        }
+        .ael-terminal-body::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .ael-terminal-body::-webkit-scrollbar-thumb {
+            background: #30363d;
+            border-radius: 3px;
+        }
+    </style>
+
     <script>
         (function() {
             var html = document.documentElement;
@@ -112,13 +263,189 @@
             } else if (!stored && window.matchMedia('(prefers-color-scheme: light)').matches) {
                 html.classList.add('light-mode');
             }
+
+            document.querySelector('.theme-toggle').addEventListener('click', function() {
+                var html = document.documentElement;
+                html.classList.toggle('light-mode');
+                localStorage.setItem('theme', html.classList.contains('light-mode') ? 'light' : 'dark');
+            });
         })();
 
-        document.querySelector('.theme-toggle').addEventListener('click', function() {
-            var html = document.documentElement;
-            html.classList.toggle('light-mode');
-            localStorage.setItem('theme', html.classList.contains('light-mode') ? 'light' : 'dark');
-        });
+        (function() {
+            var terminal = document.getElementById('aelTerminal');
+            var body = document.getElementById('aelTerminalBody');
+            var input = document.getElementById('aelTerminalInput');
+            var isOpen = false;
+            var clickCount = 0;
+            var clickTimer = null;
+
+            function open() {
+                isOpen = true;
+                terminal.classList.add('ael-terminal-open');
+                setTimeout(function() { input.focus(); }, 100);
+            }
+
+            function close() {
+                isOpen = false;
+                terminal.classList.remove('ael-terminal-open');
+                clickCount = 0;
+            }
+
+            function write(text, className) {
+                var line = document.createElement('div');
+                line.className = 'ael-terminal-line';
+                var prompt = document.createElement('span');
+                prompt.className = 'ael-terminal-prompt';
+                prompt.textContent = '\u276F';
+                var content = document.createElement('span');
+                content.className = 'ael-terminal-text' + (className ? ' ' + className : '');
+                content.innerHTML = text;
+                line.appendChild(prompt);
+                line.appendChild(content);
+                body.appendChild(line);
+                body.scrollTop = body.scrollHeight;
+            }
+
+            function inputLine(text, className) {
+                var line = document.createElement('div');
+                line.className = 'ael-terminal-line';
+                var prompt = document.createElement('span');
+                prompt.className = 'ael-terminal-prompt';
+                prompt.textContent = '\u276F';
+                var content = document.createElement('span');
+                content.className = 'ael-terminal-text' + (className ? ' ' + className : '');
+                content.textContent = text;
+                line.appendChild(prompt);
+                line.appendChild(content);
+                body.appendChild(line);
+                body.scrollTop = body.scrollHeight;
+            }
+
+            function respond(text, className) {
+                var line = document.createElement('div');
+                line.className = 'ael-terminal-line';
+                var prompt = document.createElement('span');
+                prompt.className = 'ael-terminal-prompt';
+                prompt.style.visibility = 'hidden';
+                prompt.textContent = '\u276F';
+                var content = document.createElement('span');
+                content.className = 'ael-terminal-text' + (className ? ' ' + className : '');
+                content.innerHTML = text;
+                line.appendChild(prompt);
+                line.appendChild(content);
+                body.appendChild(line);
+                body.scrollTop = body.scrollHeight;
+            }
+
+            function processCommand(cmd) {
+                var args = cmd.trim().toLowerCase().split(/\s+/);
+                var command = args[0];
+
+                switch (command) {
+                    case 'help':
+                        respond('Available commands:<br>' +
+                            '  <span class="ael-terminal-text-accent">about</span>      — Who I am<br>' +
+                            '  <span class="ael-terminal-text-accent">vision</span>     — AEL philosophy<br>' +
+                            '  <span class="ael-terminal-text-accent">systems</span>    — How I work<br>' +
+                            '  <span class="ael-terminal-text-accent">projects</span>   — Key projects<br>' +
+                            '  <span class="ael-terminal-text-accent">github</span>     — GitHub profile<br>' +
+                            '  <span class="ael-terminal-text-accent">contact</span>    — Get in touch<br>' +
+                            '  <span class="ael-terminal-text-accent">clear</span>      — Clear terminal<br>' +
+                            '  <span class="ael-terminal-text-accent">exit</span>       — Close terminal', 'ael-terminal-text-dim');
+                        break;
+
+                    case 'about':
+                        respond('Ayman Elmasry — Visionary \u00B7 AI Orchestrator \u00B7 Brand Designer \u00B7 Founder @ AEL Digital Studio.<br><br>' +
+                            'I define the vision behind digital products and orchestrate AI to bring that vision to life. ' +
+                            'Dubai \u00B7 Egypt \u00B7 Kuwait — collaborating with clients worldwide.', 'ael-terminal-text-green');
+                        break;
+
+                    case 'vision':
+                        respond('AEL Design Philosophy:<br><br>' +
+                            '  <span class="ael-terminal-text-accent">Vision</span>      — Define what to build and why<br>' +
+                            '  <span class="ael-terminal-text-accent">System</span>     — Structure how it works<br>' +
+                            '  <span class="ael-terminal-text-accent">Execution</span>  — Build with AI and technology<br>' +
+                            '  <span class="ael-terminal-text-accent">Product</span>    — Deliver what users need<br><br>' +
+                            'Every project is a system, not an isolated deliverable.', 'ael-terminal-text-yellow');
+                        break;
+
+                    case 'systems':
+                        respond('Every project follows a consistent methodology:<br><br>' +
+                            '\u2022 Brand identity and design systems<br>' +
+                            '\u2022 AI-powered workflows and orchestration<br>' +
+                            '\u2022 Scalable digital architecture<br>' +
+                            '\u2022 Component libraries and design tokens<br><br>' +
+                            'Technology — including AI — serves the execution, not the identity.', 'ael-terminal-text');
+                        break;
+
+                    case 'projects':
+                        respond('Key projects:<br><br>' +
+                            '\u2022 <span class="ael-terminal-text-accent">AEL Design System</span> — Comprehensive component library<br>' +
+                            '\u2022 <span class="ael-terminal-text-accent">AEL Color OS</span> — Semantic color palette engine<br>' +
+                            '\u2022 <span class="ael-terminal-text-accent">AEL Prompt Framework</span> — 1,000+ AI UI prompts<br>' +
+                            '\u2022 <span class="ael-terminal-text-accent">AEL Omega Platform</span> — Color intelligence platform<br>' +
+                            '\u2022 <span class="ael-terminal-text-accent">AEL Code Analyzer</span> — Static analysis tool', 'ael-terminal-text');
+                        break;
+
+                    case 'github':
+                        respond('https://github.com/aymanelmasryael', 'ael-terminal-text-accent');
+                        break;
+
+                    case 'contact':
+                        respond('Email: ayman@aymanelmasry.me<br>' +
+                            'Web: https://www.aymanelmasry.com<br>' +
+                            'LinkedIn: /in/aymanelmasryael<br>' +
+                            'X: @aymanelmasryael', 'ael-terminal-text-green');
+                        break;
+
+                    case 'clear':
+                        body.innerHTML = '';
+                        break;
+
+                    case 'exit':
+                    case 'close':
+                        close();
+                        break;
+
+                    default:
+                        respond('Unknown command: <span class="ael-terminal-text-red">' + command + '</span>. Type <span class="ael-terminal-text-accent">help</span> for available commands.', 'ael-terminal-text-dim');
+                }
+            }
+
+            document.addEventListener('keydown', function(e) {
+                if (e.ctrlKey && (e.key === '\`' || e.key === '~')) {
+                    e.preventDefault();
+                    if (isOpen) { close(); }
+                    else { open(); }
+                    return;
+                }
+                if (e.key === 'Escape' && isOpen) {
+                    close();
+                }
+            });
+
+            document.querySelector('.site-name').addEventListener('click', function(e) {
+                clickCount++;
+                if (clickCount === 1) {
+                    clickTimer = setTimeout(function() { clickCount = 0; }, 600);
+                } else if (clickCount >= 3) {
+                    clearTimeout(clickTimer);
+                    clickCount = 0;
+                    open();
+                }
+            });
+
+            input.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter') {
+                    var cmd = input.value;
+                    if (cmd.trim()) {
+                        inputLine(cmd);
+                        processCommand(cmd);
+                    }
+                    input.value = '';
+                }
+            });
+        })();
     </script>
 </body>
 </html>
