@@ -1,17 +1,17 @@
 :root {
-    /* ── Core Colors ── */
-    --bg-color: #07111F;
-    --text-color: #F5F7FA;
-    --text-muted: #a8b2bc;
+    /* ── Core Colors (AEL Identity) ── */
+    --bg-color: #000000;
+    --text-color: #FFFFFF;
+    --text-muted: #A3A3A3;
     --heading-color: #fff;
-    --body-color: #d1d9e0;
+    --body-color: #D4D4D4;
     --primary-color: #0074FF;
-    --primary-hover: #3399FF;
-    --border-color: #243245;
-    --header-bg: rgba(7, 17, 31, 0.75);
-    --button-bg: rgba(20, 37, 61, 0.6);
-    --button-hover: rgba(30, 54, 92, 0.8);
-    --button-border: #1a2a40;
+    --primary-hover: #4D9FFF;
+    --border-color: #1A1A1A;
+    --header-bg: rgba(0, 0, 0, 0.85);
+    --button-bg: #1A1A1A;
+    --button-hover: #2D2D2D;
+    --button-border: #2D2D2D;
 
     /* ── Typography ── */
     --text-xs: 0.8rem;
@@ -65,15 +65,15 @@
 :root.light-mode {
     --bg-color: #F5F5F5;
     --text-color: #1A1A1A;
-    --text-muted: #555555;
-    --heading-color: #1A1A1A;
-    --body-color: #333333;
+    --text-muted: #737373;
+    --heading-color: #111111;
+    --body-color: #2D2D2D;
     --primary-hover: #0056CC;
     --border-color: #E5E5E5;
     --header-bg: rgba(245, 245, 245, 0.8);
     --button-bg: #FFFFFF;
-    --button-hover: #F0F0F0;
-    --button-border: #D0D0D0;
+    --button-hover: #F5F5F5;
+    --button-border: #D4D4D4;
 }
 
 * { 
@@ -93,6 +93,7 @@ body {
     line-height: 1.7;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
