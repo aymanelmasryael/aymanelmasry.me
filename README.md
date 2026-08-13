@@ -2,7 +2,7 @@
 
 Personal website for Ayman Elmasry — Visionary Architect, AI Orchestrator, Brand Designer.
 
-Built as a single-page static site with dark/light theme toggle, custom domain via GitHub Pages.
+Built as a static site with dark/light theme toggle, custom domain via GitHub Pages.
 
 ## Live
 
@@ -12,6 +12,9 @@ Built as a single-page static site with dark/light theme toggle, custom domain v
 
 ```
 ├── index.html        # Main page
+├── credentials.html  # Verified certifications
+├── identity.html     # AEL Brand & Operating System
+├── business-card/    # Business card concepts
 ├── css/style.css     # Styles
 ├── favicon/          # Favicon assets (48px, 192px, ICO, OG image)
 ├── profile.png       # Profile photo
