@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AEL Brand &amp; Operating System — Changelog</title>
+    <link>https://aymanelmasry.me/identity.html</link>
+    <description>Updates to the AEL Brand &amp; Operating System</description>
+    <language>en-us</language>
+    <atom:link href="https://aymanelmasry.me/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>v5.0.0 — Enterprise Edition</title>
+      <link>https://aymanelmasry.me/identity.html#s26</link>
+      <guid isPermaLink="false">ael-v5.0.0</guid>
+      <pubDate>Wed, 15 Jan 2025 12:00:00 GMT</pubDate>
+      <description>Added Changelog, License, Accessibility Statement, Glossary, FAQ, Contributing, Search, Theme toggle.</description>
+    </item>
+    <item>
+      <title>v4.1.0 — Token Layer</title>
+      <link>https://aymanelmasry.me/identity.html#s25</link>
+      <guid isPermaLink="false">ael-v4.1.0</guid>
+      <pubDate>Fri, 10 Jan 2025 12:00:00 GMT</pubDate>
+      <description>Added Token Architecture compatible with Tailwind v4 and shadcn/ui.</description>
+    </item>
+  </channel>
+</rss>
