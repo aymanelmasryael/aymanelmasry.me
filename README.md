@@ -1,6 +1,6 @@
 # aymanelmasry.me
 
-Personal website for Ayman Elmasry — Visionary Architect, AI Orchestrator, Brand Designer.
+Personal website for Ayman Elmasry — Visionary · AI Orchestrator · Brand Designer · Founder @ AEL Digital Studio.
 
 Built as a static site with dark/light theme toggle, custom domain via GitHub Pages.
 
